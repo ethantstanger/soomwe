@@ -1,7 +1,7 @@
 const raylib = @cImport(@cInclude("raylib.h"));
 
 pub const window = struct {
-    const init = raylib.InitWindow;
-    const deinit = raylib.CloseWindow;
-    const shouldClose = raylib.WindowShouldClose;
+    pub const init = raylib.InitWindow;
+    pub const deinit = raylib.CloseWindow;
+    pub const shouldClose = raylib.WindowShouldClose;
 };
