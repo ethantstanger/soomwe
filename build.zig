@@ -10,6 +10,13 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
 
+    const raylib_dep = b.dependency("raylib", .{
+        .target = target,
+        .optimize = optimize,
+    });
+    const raylib = raylib_dep.artifact("raylib");
+    mod.linkLibrary(raylib);
+
     const mod_tests = b.addTest(.{
         .root_module = mod,
     });

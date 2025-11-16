@@ -1,6 +1,12 @@
 .{
     .name = .soomwe,
     .version = "0.0.0",
+    .dependencies = .{
+        .raylib = .{
+            .url = "git+https://github.com/raysan5/raylib#596d3bcb7e658a82218c84fdb437310a960bc0dc",
+            .hash = "raylib-5.6.0-dev-whq8uKUdBQXxTPaXheJzS8HaK-z08BTXVPrH-jkbT3Tv",
+        },
+    },
     .fingerprint = 0x59fafb90080d9c5c, // Changing this has security and trust implications.
     .minimum_zig_version = "0.15.2",
     .paths = .{
